@@ -1,0 +1,396 @@
+/* CSS Stylesheet */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2874f0;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+}
+
+/* Logo Styling */
+.logo img {
+    padding-top: 8px;
+    width: 180px;
+    padding-right: 20px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 30px;
+    font-size: 15px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    float: right;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 60px;
+    margin-left: 70px;
+    margin-right: 0px;
+    margin-top: 20px;
+    width: 400px;
+    background-color: #fff;
+}
+
+.search-bar i {
+    position: absolute;
+    padding-top: 30px;
+    right: 330px;
+    color: #2874f0;
+}
+
+/* Icons Styling */
+.icons {
+    display: flex;
+    align-items: right;
+    padding-left: 10px;
+}
+
+.icons i {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 22px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+span {
+    margin-left: 40px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.icons span {
+    display: block;
+}
+
+.icons div {
+    margin-left: 8px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Product Section Styling */
+.product-image-container {
+    cursor: pointer;
+    margin-right: 10px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.heading {
+    padding-top: 100px;
+    padding-left: 200px;
+    color: rgb(96, 89, 89);
+}
+
+.product-image-container img {
+    max-width: 100%;
+    height: 500px;
+    size: 10px;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 300px;
+    background-color: #dec8dd;
+}
+
+.content {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.product-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-details {
+    width: 250%;
+    padding-right: 500px;
+    font-size: 20px;
+    text-align: justify;
+    color:rgb(65, 63, 63);
+}
+
+.discount p {
+    display: inline-block;
+    padding-right: 8px;
+    
+}
+
+.price {
+    font-size: 20px;
+}
+
+.percent {
+    font-size: 20px;
+    color: red;
+}
+
+.mrp {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+    color: #5a575a;
+}
+
+.tax {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10px;
+    color: #212021;
+}
+
+.coupon {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 8px;
+    margin-right: 100px;
+    color: #343234;
+    display: flex;
+}
+
+.coupon p {
+    color: blue;
+    padding-left: 50px;
+}
+
+.offer {
+    display: flex;
+    color: #343234;
+}
+
+.offer i {
+    padding-top: 20px;
+    padding-left: 350px;
+    color: #343234;
+}
+
+.delivery i {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 90px;
+    display: inline;
+    color: #2874f0;
+}
+
+.free p {
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 30px;
+    color: #343234;
+}
+
+/* Right Box Styling */
+.right-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 2px solid;
+    border-color: #7b7878;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 150px;
+    margin-right: 80px;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.right-box .price {
+    padding-left: 25px;
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+.right-box p {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.right-box i {
+    padding-left: 25px;
+}
+
+.right-box button {
+    margin-left: 25px;
+    margin-right: 10px;
+    width: 82%;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+.right-box .bag {
+    background-color: #f8e831;
+}
+
+.right-box .buy {
+    background-color: #ffa500;
+}
+
+.right-box .transaction {
+    color: blue;
+    padding-left: 75px;
+}
+
+.right-box .list {
+    border-radius: 10px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgb(63, 55, 55);
+}
+
+.right-box .bag:hover {
+    background-color: #e8d827;
+}
+
+.right-box .buy:hover {
+    background-color: #ea9b06;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Header */
+    .logo img {
+      width: 50%; /* Adjust as needed */
+    }
+    
+    nav ul li {
+      font-size: 12px; /* Adjust as needed */
+      margin-right: 10px; /* Adjust as needed */
+    }
+    
+    .search-bar input[type="text"] {
+      width: 200px; /* Adjust as needed */
+    }
+    
+    .icons i {
+      font-size: 18px; /* Adjust as needed */
+    }
+    
+    /* Product Section */
+    .heading {
+      padding-top: 50px; /* Adjust as needed */
+      padding-left: 20px; /* Adjust as needed */
+      font-size: 18px; /* Adjust as needed */
+    }
+    
+    .product-image-container img {
+      height: auto; /* Adjust as needed */
+      width: 100%; /* Adjust as needed */
+      margin: 10px auto; /* Adjust as needed */
+      max-width: 300px; /* Adjust as needed */
+    }
+    
+    .product-details {
+      width: 100%; /* Adjust as needed */
+      padding-right: 20px; /* Adjust as needed */
+      font-size: 16px; /* Adjust as needed */
+    }
+    
+    .right-box {
+      width: 100%; /* Adjust as needed */
+      height: auto; /* Adjust as needed */
+      margin-top: 20px; /* Adjust as needed */
+      margin-right: 0; /* Adjust as needed */
+    }
+    
+    .right-box .price {
+      font-size: 20px; /* Adjust as needed */
+    }
+    
+    .right-box p {
+      font-size: 14px; /* Adjust as needed */
+    }
+    
+    .right-box button {
+      width: 90%; /* Adjust as needed */
+    }
+  }
+
+  /* Media query for screens smaller than 480px (mobile phones) */
+@media only screen and (max-width: 480px) {
+    /* Header */
+    .logo img {
+      width: 40%; /* Adjust as needed */
+    }
+    
+    nav ul li {
+      font-size: 10px; /* Adjust as needed */
+      margin-right: 5px; /* Adjust as needed */
+    }
+    
+    .search-bar input[type="text"] {
+      width: 150px; /* Adjust as needed */
+    }
+    
+    .icons i {
+      font-size: 16px; /* Adjust as needed */
+    }
+    
+    /* Product Section */
+    .heading {
+      padding-top: 30px; /* Adjust as needed */
+      padding-left: 10px; /* Adjust as needed */
+      font-size: 14px; /* Adjust as needed */
+    }
+    
+    .product-image-container img {
+      max-width: 250px; /* Adjust as needed */
+    }
+    
+    .product-details {
+      width: 100%; /* Adjust as needed */
+      padding-right: 10px; /* Adjust as needed */
+      font-size: 12px; /* Adjust as needed */
+    }
+    
+    .right-box {
+      width: 100%; /* Adjust as needed */
+      height: auto; /* Adjust as needed */
+      margin-top: 10px; /* Adjust as needed */
+      margin-right: 0; /* Adjust as needed */
+    }
+    
+    .right-box .price {
+      font-size: 16px; /* Adjust as needed */
+    }
+    
+    .right-box p {
+      font-size: 10px; /* Adjust as needed */
+    }
+    
+    .right-box button {
+      width: 90%; /* Adjust as needed */
+      font-size: 12px; /* Adjust as needed */
+    }
+  }
